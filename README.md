@@ -40,6 +40,12 @@ start of numpy
     sh=np.arrange(0,10)
     np.reshape(sh,(2,5)
     ```
+    ** dimensions must be sum the same length of the origin array
+    ** for 2d array, and don't one of the dimension, set -1, and it will be complete automatically:
+    ```
+    a.reshape(5,-1) - # 5 rows
+    a.reshape(-1,2) - # 2 columns
+    ```
   * linspace(start,end,length)= creates array with length elements, between the range start-end 
   * with even jumps according to the length
     * including end number
